@@ -22,6 +22,7 @@ header = next(reader)
 header_list = ["Year","Month","Day","Time","TempF"]
 writer.writerow(header_list)
 
+'Converts Kelvin to Ferenheit'
 for row in reader:
     Year, Month, Day, Time, TempK = row
     TempF = round(float(TempK) *1.8-459.67, 2)
